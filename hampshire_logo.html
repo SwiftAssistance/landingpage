@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1 Fencing Specialists in Hampshire | Hampshire Fencing Ltd</title>
+    <meta name="description" content="Hampshire's top-rated fencing installers. 10-year guarantee on all work. Get a free, instant quote today. Call 08008611970 now for limited-time offers.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Animations -->
+    <style>
+        :root {
+            --neon-green: #4a8f4a;
+            --dark-forest: #2d5a2d;
+            --light-lime: #6bb86b;
+            --gold: #FFD700;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .bg-neon-green { background-color: var(--neon-green); }
+        .text-neon-green { color: var(--neon-green); }
+        .bg-dark-forest { background-color: var(--dark-forest); }
+        .text-dark-forest { color: var(--dark-forest); }
+        .border-neon-green { border-color: var(--neon-green); }
+
+        .pulse-shadow {
+            box-shadow: 0 0 0 0 rgba(74, 143, 74, 1);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(74, 143, 74, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(74, 143, 74, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(74, 143, 74, 0); }
+        }
+        .hero-headline {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            line-height: 1.1;
+            font-weight: 900;
+        }
+        .notification-popup {
+            animation: slide-in-out 5s ease-in-out forwards;
+        }
+        @keyframes slide-in-out {
+            0% { transform: translateY(200%); opacity: 0; }
+            10% { transform: translateY(0); opacity: 1; }
+            90% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(200%); opacity: 0; }
+        }
+    </style>
+    
+    <!-- Local Business Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hampshire Fencing Ltd",
+      "image": "hampshire_logo.webp",
+      "@id": "",
+      "url": "",
+      "telephone": "08008611970",
+      "priceRange": "££",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Fencing Lane",
+        "addressLocality": "Hampshire",
+        "postalCode": "SO23 9BE",
+        "addressCountry": "UK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.063202,
+        "longitude": -1.308_0_0
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "152"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-40 shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="hampshire_logo.webp" alt="Hampshire Fencing Ltd Logo" class="h-10 md:h-12" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="text-xl font-bold text-dark-forest hidden">Hampshire Fencing Ltd</div>
+            <div class="text-right">
+                <p class="hidden sm:block text-gray-600 font-medium">Get a FREE Quote Now</p>
+                <a href="tel:08008611970" class="text-lg md:text-2xl font-bold text-dark-forest hover:text-neon-green transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                    0800 861 1970
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO (0-3 SECONDS) -->
+    <main>
+        <section class="bg-dark-forest text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 grid md:grid-cols-1 gap-12 items-center text-center">
+                <!-- Text & CTA -->
+                <div>
+                    <h1 class="hero-headline uppercase">HAMPSHIRE'S #1 FENCING SPECIALISTS</h1>
+                    <p class="text-xl md:text-2xl mt-4 text-gray-200">Professional Installation • 10-Year Guarantee • Call Now</p>
+                    
+                    <a href="tel:08008611970" class="mt-8 inline-block w-full max-w-lg bg-neon-green text-dark-forest text-2xl md:text-3xl font-black py-5 px-8 rounded-lg shadow-2xl pulse-shadow transform hover:scale-105 transition-transform">
+                        CALL 0800 861 1970
+                        <span class="block text-base font-semibold opacity-90">FOR AN INSTANT QUOTE!</span>
+                    </a>
+
+                    <div class="mt-8 flex justify-center space-x-4 md:space-x-6">
+                        <div class="text-center bg-white/10 p-3 rounded-lg flex-1">
+                            <p class="text-2xl font-bold text-white"><span id="jobsCounter">200</span>+</p>
+                            <p class="text-sm text-gray-300">Jobs This Year</p>
+                        </div>
+                        <div class="text-center bg-white/10 p-3 rounded-lg flex-1">
+                            <p class="text-2xl font-bold text-white">4.9★</p>
+                            <p class="text-sm text-gray-300">Rating</p>
+                        </div>
+                        <div class="text-center bg-white/10 p-3 rounded-lg flex-1">
+                            <p class="text-2xl font-bold text-white">✓</p>
+                            <p class="text-sm text-gray-300">Fully Insured</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 text-lg font-bold bg-yellow-400 text-black py-2">
+                <span id="urgencyTicker">Last 3 Slots Available This Month!</span>
+            </div>
+        </section>
+
+        <!-- 2. TRUST (3-8 SECONDS) -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-dark-forest">Join 400+ Delighted Hampshire Homeowners</h2>
+                <p class="text-center text-lg mt-2 text-gray-600">The most trusted fencing experts since 2020.</p>
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-neon-green">
+                        <div class="flex items-center">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <p class="ml-2 font-bold text-gray-800">Excellent Work!</p>
+                        </div>
+                        <p class="mt-4 text-gray-600">"Absolutely thrilled with our new fence. The team was professional, fast, and the quality is outstanding. Highly recommend Hampshire Fencing Ltd."</p>
+                        <p class="mt-4 font-bold text-dark-forest">- Sarah P, Winchester</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-neon-green">
+                        <div class="flex items-center">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <p class="ml-2 font-bold text-gray-800">Reliable & Professional</p>
+                        </div>
+                        <p class="mt-4 text-gray-600">"From the initial quote to the final installation, the service was flawless. Our garden has been completely transformed. Worth every penny."</p>
+                        <p class="mt-4 font-bold text-dark-forest">- Mark T, Southampton</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-neon-green">
+                        <div class="flex items-center">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <p class="ml-2 font-bold text-gray-800">Fantastic Quality</p>
+                        </div>
+                        <p class="mt-4 text-gray-600">"We were impressed by the speed and quality of the work. The 10-year guarantee gave us real peace of mind. Don't hesitate to call them."</p>
+                        <p class="mt-4 font-bold text-dark-forest">- Emily R, Basingstoke</p>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="tel:08008611970" class="bg-dark-forest text-white text-xl font-bold py-4 px-10 rounded-lg hover:bg-neon-green transition-colors">
+                        CALL NOW For Your Free Quote!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROOF OF WORK -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-dark-forest">See Our Flawless Work</h2>
+                <p class="text-lg mt-2 text-gray-600">Quality you can see. Fences that last a decade, guaranteed.</p>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <img src="https://placehold.co/600x400/2d5a2d/FFFFFF/webp?text=Modern+Panel+Fence" alt="Modern Panel Fence installed in Hampshire" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                    <img src="https://placehold.co/600x400/4a8f4a/FFFFFF/webp?text=Secure+Garden+Gate" alt="Secure Garden Gate installation" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                    <img src="https://placehold.co/600x400/6bb86b/FFFFFF/webp?text=Composite+Fencing" alt="Durable composite fencing" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                    <img src="https://placehold.co/600x400/2d5a2d/FFFFFF/webp?text=Traditional+Picket+Fence" alt="Classic picket fence" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. URGENCY (15-20 SECONDS) -->
+        <section class="bg-dark-forest text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-black text-yellow-400">BOOK BY MIDNIGHT FOR 15% OFF!</h2>
+                <p class="text-xl md:text-2xl mt-4 text-gray-200">This offer ends soon. Don't miss out on Hampshire's best fencing deal!</p>
+                <div id="countdownTimer" class="text-4xl md:text-6xl font-bold my-6 tracking-wider">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <div class="mt-6 text-lg">
+                    <p>✓ Price anchor: <span class="font-bold">Save ~£500 vs competitors</span></p>
+                    <p>✓ Seasonal urgency: <span class="font-bold">Book before winter price increases</span></p>
+                    <p>✓ Availability: <span class="font-bold text-yellow-400">Only <span id="slotsRemaining">3</span>/10 slots remaining this month!</span></p>
+                </div>
+                <a href="tel:08008611970" class="mt-8 inline-block w-full max-w-md bg-neon-green text-dark-forest text-2xl md:text-3xl font-black py-5 px-8 rounded-lg shadow-2xl pulse-shadow transform hover:scale-105 transition-transform">
+                    LOCK IN YOUR DISCOUNT - CALL NOW
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. CAPTURE (20-30 SECONDS) & RISK REVERSAL -->
+        <section class="py-20 bg-gray-100" id="quote">
+            <div class="container mx-auto px-4 grid md:grid-cols-1 gap-12 items-center text-center">
+                <!-- Risk Reversal & Final CTA -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-dark-forest">An Iron-Clad Guarantee For Your Peace of Mind</h2>
+                    <p class="text-lg mt-4 text-gray-700">We stand behind our work so you can move forward with confidence. You risk absolutely nothing.</p>
+                    <div class="max-w-3xl mx-auto">
+                        <ul class="mt-6 space-y-4 text-left md:text-center">
+                            <li class="flex items-start md:justify-center">
+                                <span class="text-2xl text-neon-green mr-3">✔</span>
+                                <div><strong class="text-dark-forest">10-Year Material Warranty:</strong> Built to last against the British weather.</div>
+                            </li>
+                            <li class="flex items-start md:justify-center">
+                                 <span class="text-2xl text-neon-green mr-3">✔</span>
+                               <div><strong class="text-dark-forest">No Payment Until Complete:</strong> We only ask for payment when you are completely satisfied.</div>
+                            </li>
+                             <li class="flex items-start md:justify-center">
+                                 <span class="text-2xl text-neon-green mr-3">✔</span>
+                               <div><strong class="text-dark-forest">£2M Public Liability Insurance:</strong> Your property is fully protected.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10">
+                         <h3 class="text-2xl font-bold text-center">There's Only One Thing Left To Do...</h3>
+                        <p class="text-center mt-2 text-gray-600">Call us now for a fast, free, no-obligation quote.</p>
+                        <a href="tel:08008611970" class="mt-6 inline-block w-full max-w-lg bg-neon-green text-dark-forest text-2xl md:text-3xl font-black py-5 px-8 rounded-lg shadow-2xl pulse-shadow transform hover:scale-105 transition-transform">
+                            CALL 0800 861 1970 NOW
+                            <span class="block text-base font-semibold opacity-90">GET YOUR FREE QUOTE!</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-forest text-white">
+        <div class="container mx-auto px-4 py-12 text-center">
+            <h2 class="text-3xl font-bold">Ready To Transform Your Garden?</h2>
+            <p class="mt-2 text-lg text-gray-300">Don't wait. Call our friendly team now for a fast, free quote.</p>
+            <a href="tel:08008611970" class="mt-6 inline-block text-4xl font-black text-yellow-400 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                0800 861 1970
+            </a>
+            <p class="mt-8 text-gray-400 text-sm">&copy; <span id="year"></span> Hampshire Fencing Ltd. All rights reserved. <br> Serving all of Hampshire including Winchester, Southampton, Basingstoke, and surrounding areas.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile CTA -->
+    <a href="tel:08008611970" class="md:hidden fixed bottom-4 left-4 right-4 z-50 bg-neon-green text-dark-forest text-xl font-black py-4 px-6 rounded-lg shadow-2xl flex items-center justify-center pulse-shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+        CALL FOR INSTANT QUOTE
+    </a>
+
+    <!-- Social Proof Popup -->
+    <div id="socialProofPopup" class="notification-popup hidden fixed bottom-5 left-5 z-50 bg-gray-800 text-white p-4 rounded-lg shadow-xl max-w-xs">
+        <p><strong><span id="popupName">John</span> from <span id="popupLocation">Winchester</span></strong> just booked a free quote!</p>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exitIntentPopup" class="hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4">
+        <div class="bg-white p-8 rounded-lg shadow-2xl text-center max-w-lg relative">
+            <button id="closeExitPopup" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
+            <h2 class="text-4xl font-black text-dark-forest">WAIT!</h2>
+            <p class="text-xl mt-2">Before you go, get an instant quote over the phone in 60 seconds.</p>
+             <a href="tel:08008611970" class="mt-6 inline-block w-full bg-neon-green text-dark-forest text-2xl font-black py-4 px-8 rounded-lg shadow-xl pulse-shadow">
+                CALL NOW: 0800 861 1970
+            </a>
+            <p class="mt-4 text-gray-600">Limited slots available this month!</p>
+        </div>
+    </div>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // --- DYNAMIC CONTENT & COUNTERS ---
+        
+        // Jobs Counter
+        const jobsCounter = document.getElementById('jobsCounter');
+        let currentJobs = 127;
+        setInterval(() => {
+            currentJobs++;
+            jobsCounter.innerText = currentJobs;
+        }, 8000); // Increment every 8 seconds
+
+        // Urgency Ticker
+        const urgencyTicker = document.getElementById('urgencyTicker');
+        const tickers = [
+            "Last 3 Slots Available This Month!",
+            "Call now to lock in your 15% discount!",
+            "Serving your area: Hampshire",
+            "Get a quote before prices increase!"
+        ];
+        let tickerIndex = 0;
+        setInterval(() => {
+            tickerIndex = (tickerIndex + 1) % tickers.length;
+            urgencyTicker.style.opacity = 0;
+            setTimeout(() => {
+                urgencyTicker.innerText = tickers[tickerIndex];
+                urgencyTicker.style.opacity = 1;
+            }, 500);
+        }, 5000);
+
+        // Countdown Timer
+        const hoursEl = document.getElementById('hours');
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date(now);
+            endOfDay.setHours(23, 59, 59, 999);
+            const timeLeft = endOfDay - now;
+
+            let hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            let minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+            let seconds = Math.floor((timeLeft / 1000) % 60);
+
+            hoursEl.innerText = hours.toString().padStart(2, '0');
+            minutesEl.innerText = minutes.toString().padStart(2, '0');
+            secondsEl.innerText = seconds.toString().padStart(2, '0');
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Set current year
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // --- CONVERSION TRIGGERS ---
+
+        // Social Proof Popup
+        const socialProofPopup = document.getElementById('socialProofPopup');
+        const popupName = document.getElementById('popupName');
+        const popupLocation = document.getElementById('popupLocation');
+        const names = ["David", "Sarah", "Mike", "Emily", "Tom", "Jessica"];
+        const locations = ["Southampton", "Portsmouth", "Basingstoke", "Eastleigh", "Fareham", "Andover"];
+        
+        function showSocialProof() {
+            popupName.innerText = names[Math.floor(Math.random() * names.length)];
+            popupLocation.innerText = locations[Math.floor(Math.random() * locations.length)];
+            socialProofPopup.classList.remove('hidden');
+            socialProofPopup.style.animation = 'none';
+            void socialProofPopup.offsetWidth; // Trigger reflow
+            socialProofPopup.style.animation = 'slide-in-out 5s ease-in-out forwards';
+        }
+        setTimeout(() => {
+            showSocialProof();
+            setInterval(showSocialProof, 12000); // Show every 12 seconds
+        }, 7000); // Initial delay 7 seconds
+
+
+        // Exit Intent Popup
+        const exitIntentPopup = document.getElementById('exitIntentPopup');
+        const closeExitPopup = document.getElementById('closeExitPopup');
+        
+        const showExitIntent = () => {
+            exitIntentPopup.classList.remove('hidden');
+        };
+
+        document.addEventListener('mouseout', (e) => {
+            // If the mouse leaves the viewport at the top, show the popup.
+            if (!e.toElement && !e.relatedTarget && e.clientY < 10) {
+                showExitIntent();
+            }
+        });
+
+        closeExitPopup.addEventListener('click', () => {
+             exitIntentPopup.classList.add('hidden');
+        });
+
+        // This script block had a reference to a contact form that no longer exists.
+        // I have removed the unnecessary code.
+
+    });
+    </script>
+</body>
+</html>
+
+
+
